@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Noah Soldi | Desenvolvedor Full Stack</title>
+    <meta name="description"
+        content="Desenvolvedor Full Stack com experiência em sistemas web e mobile, focado em performance, segurança e arquitetura bem definida.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Noah Soldi">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- imagem de compartilhamento -->
+    <meta property="og:title" content="Noah Soldi | Desenvolvedor Full Stack">
+    <meta property="og:description"
+        content="Desenvolvedor Full Stack com experiência em sistemas web e mobile, focado em performance, segurança e arquitetura bem definida.">
+    <meta property="og:image" content="images/compartilhamento.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noahsoldi.com.br">
+
+
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Observer.min.js"></script>
+    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+
+
+    <!-- Particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
+
+    <!-- Space Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="particles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="sections">
+        <nav class="section-indicator">
+            <button data-index="0" aria-label="Home" title="Home"><span>home</span></button>
+            <button data-index="1" aria-label="Atuação" title="Atuação"><span>atuação</span></button>
+            <button data-index="2" aria-label="Especialidades" title="Especialidades"><span>especialidades</span></button>
+            <button data-index="3" aria-label="Projetos" title="Projetos"><span>projetos</span></button>
+            <button data-index="4" aria-label="Contato" title="Contato"><span>contato</span></button>
+        </nav>
+
+        <section class="panel banner" id="home">
+            <div id="particles-js"></div>
+            <div class="conteudo">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <h1 id="scramble-nome" js-texto-nome="Noah Soldi">Noah Soldi</h1>
+                            <h2 id="scramble-titulo" js-texto-titulo="Desenvolvedor Full Stack">Desenvolvedor Full Stack
+                            </h2>
+                            <p id="scramble-descricao"
+                                js-texto-descricao="Desenvolvimento de aplicações web sob medida, com foco em performance, segurança e manutenibilidade.">
+                                Desenvolvimento de aplicações web sob medida, com foco em performance, segurança e
+                                manutenibilidade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel section about bl-sobre" id="sobre">
+            <div class="container">
+                <h3 class="section-title">Atuação</h3>
+                <div class="editor">
+                    <p>
+                        Desenvolvedor Full Stack com experiência em projetos web e mobile, atuando no desenvolvimento,
+                        manutenção, otimização e análise de sistemas.
+                        Trabalho com foco em código limpo, boas práticas, segurança da informação e soluções escaláveis.
+                    </p>
+                    <br>
+                    <p>
+                        Atuo tanto no front-end quanto no back-end, incluindo integrações, bancos de dados, APIs,
+                        aplicações em WordPress, sistemas customizados e aplicativos mobile.
+                        Possuo experiência prática com análise de vulnerabilidades, performance de servidores e
+                        hardening básico de aplicações.
+                    </p>
+                    <br>
+
+                    <div class="mac-terminal">
+                        <div class="mac-terminal-header">
+                            <span class="btn red"></span>
+                            <span class="btn yellow"></span>
+                            <span class="btn green"></span>
+                        </div>
+                        <pre class="mac-terminal-body">
+                            <code>
+> Desenvolvimento de sistemas e sites personalizados
+> Criação de funcionalidades sob medida e regras de negócio especificas
+> Integração com APIs, serviços externos e automações
+> Otimização de performance e infraestrutura
+> Implementação de boas práticas de segurança
+> Suporte técnico, melhorias continuas e evolução de sistemas existentes<span class="cursor">█</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel section skills" id="especialidades">
+            <div class="container-fluid">
+                <h3 class="section-title">Especialidades Técnicas</h3>
+
+                <div class="editor">
+                    <div class="orders-wrapper">
+
+                        <div class="order-card">
+                            <div class="order-header">
+                                <h2>Front-end & Mobile</h2>
+                            </div>
+                            <div class="order-items">
+                                <div class="order-item">HTML5</div>
+                                <div class="order-item">CSS3</div>
+                                <div class="order-item">SASS / SCSS</div>
+                                <div class="order-item">JavaScript (ES6+)</div>
+                                <div class="order-item">jQuery</div>
+                                <div class="order-item">React</div>
+                                <div class="order-item">Consumo de APIs</div>
+                                <div class="order-item">Acessibilidade e boas práticas</div>
+                                <div class="order-item">React Native</div>
+                                <div class="order-item">Expo</div>
+                                <div class="order-item">Builds com EAS</div>
+                                <div class="order-item">Integração com APIs</div>
+                                <div class="order-item">Notificações push</div>
+                            </div>
+                        </div>
+
+                        <div class="order-card">
+                            <div class="order-header">
+                                <h2>Back-end & DevOps</h2>
+                            </div>
+                            <div class="order-items">
+                                <div class="order-item">PHP</div>
+                                <div class="order-item">WordPress (temas, plugins, ACF, hooks)</div>
+                                <div class="order-item">MySQL</div>
+                                <div class="order-item">Node.js</div>
+                                <div class="order-item">APIs REST</div>
+                                <div class="order-item">Integrações com sistemas externos</div>
+                                <div class="order-item">Validação e sanitização de dados</div>
+                                <div class="order-item">Apache</div>
+                                <div class="order-item">DNS</div>
+                                <div class="order-item">Linode (VPS)</div>
+                                <div class="order-item">ServerPilot</div>
+                                <div class="order-item">Migrações</div>
+                                <div class="order-item">Otimização de performance</div>
+                            </div>
+                        </div>
+
+                        <div class="order-card">
+                            <div class="order-header">
+                                <h2>Segurança</h2>
+                            </div>
+                            <div class="order-items">
+                                <div class="order-item">Linux (Ubuntu / Kali Linux)</div>
+                                <div class="order-item">Análise de vulnerabilidades</div>
+                                <div class="order-item">OWASP Top 10</div>
+                                <div class="order-item">Testes com OWASP ZAP</div>
+                                <div class="order-item">Reconhecimento e enumeração (Kali Linux)</div>
+                                <div class="order-item">SQL Injection (análise e mitigação)</div>
+                                <div class="order-item">XSS, CSP e hardening básico</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="panel section bl-projetos" id="projetos">
+            <div class="container">
+                <h3 class="section-title">Projetos</h3>
+
+                <div class="editor">
+                    <div class="projects-grid">
+                        <a href="https://girandosol.com.br" target="_blank" rel="noopener noreferrer" class="project-card">
+                            <h4>Girando Sol</h4>
+                            <strong>Back-end</strong>
+                            <span>WordPress · PHP · ACF · API Google Translate · JavaScript · MySQL</span>
+                            <p>
+                                Responsável pela dinamização completa do site em WordPress utilizando ACF, implementação
+                                de tradução automática via Google Translate API, criação de blog padrão e blog
+                                secundário personalizado, desenvolvimento de Custom Post Types para produtos e
+                                publicação integral do site.
+                            </p>
+                            <small>Agência Responsável: Bravo Interativa</small>
+                        </a>
+
+                        <a href="https://www.hbb.com.br/site" target="_blank" rel="noopener noreferrer" class="project-card">
+                            <h4>Hospital Bruno Born</h4>
+                            <strong>Back-end & Segurança</strong>
+                            <span>PHP · WordPress · OWASP ZAP · Segurança</span>
+                            <p>
+                                Implementação de medidas de segurança no site WordPress do hospital, incluindo análise de
+                                vulnerabilidades com OWASP ZAP, mitigação de riscos relacionados ao OWASP Top 10, e
+                                hardening básico da aplicação para proteger contra ataques comuns.
+                            </p>
+                            <small>Agência Responsável: Bravo Interativa</small>
+                        </a>
+
+                        <article class="project-card">
+                            <h4>Nossa Carteira</h4>
+                            <strong>Back-end & Mobile</strong>
+                            <span>React Native · Expo · APIs · JavaScript · MySQL · NodeJS </span>
+                            <p>
+                                Desenvolvimento de aplicativo em React Native com Expo para gestão financeira de casais,
+                                permitindo cadastro de despesas e receitas, categorização de gastos, relatórios
+                                personalizados e sincronização de dados entre usuários. Integração via API para
+                                armazenamento seguro dados e envio de notificações push.
+                            </p>
+                            <small>Agência: Interna</small>
+                        </article>
+
+                        <article class="project-card">
+                            <h4>Vale Vivo</h4>
+                            <strong>Back-end & Mobile</strong>
+                            <span>React Native · Expo · WordPress · PHP · APIs · JavaScript · Google Play · App
+                                Store</span>
+                            <p>
+                                Dinamização do portal WordPress com ACF, criação de Custom Post Types para notícias,
+                                cidades/regiões e
+                                criação de aplicativo híbrido em React Native integrado a portal de noticias WordPress,
+                                com gerenciamento de usuários e notificações push.
+                                Integração e publicação de aplicativo nas lojas.
+                            </p>
+                            <small>Agência Responsável: Bravo Interativa</small>
+                        </article>
+
+                        <a href="https://quierocafe.com.br/lojas-proximas" target="_blank" rel="noopener noreferrer" class="project-card">
+                            <h4>Quiero Café – Lojas Próximas</h4>
+                            <strong>Back-end & Front-end</strong>
+                            <span>WordPress · PHP · ACF · JavaScript · API Google Maps</span>
+                            <p>
+                                Desenvolvimento da funcionalidade “Lojas Próximas” no site da Quiero Café, permitindo
+                                aos usuários localizar unidades próximas através de geolocalização e filtros por cidade
+                                e estado. Implementação de integração com mapas, otimização da experiência do usuário e
+                                performance do sistema.
+                            </p>
+                            <small>Agência Responsável: Bravo Interativa</small>
+                        </a>
+
+                        <!-- <article class="project-card">
+                            <h4>Fundef</h4>
+                            <strong>Front-end & Back-end</strong>
+                            <p>
+                                Desenvolvimento completo do site, incluindo front-end e back-end em WordPress, criação
+                                de blog personalizado e páginas com abas para divisão de conteúdos, além de
+                                funcionalidades personalizadas sob medida para o cliente, como passos a passos e módulos
+                                interativos.
+                            </p>
+                            <span>WordPress · PHP · ACF · JavaScript · CSS</span>
+                            <small>Agência: Bravo Interativa</small>
+                        </article> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel bl-contato" id="contato">
+            <div class="container">
+                <h3 class="section-title">Contato</h3>
+                <div class="editor">
+                    <p>
+                        Para propostas, projetos ou contato profissional,
+                        utilize os canais abaixo.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="mailto:ola@noahsoldi.com.br" target="_blank" rel="noopener noreferrer">
+                                <img src="images/email.png" loading="lazy" alt="ícone email">
+                                e-mail
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5551994137799" target="_blank" rel="noopener noreferrer">
+                                <img src="images/whats.png" loading="lazy" alt="ícone whatsapp">
+                                whatsapp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/noahsoldi" target="_blank" rel="noopener noreferrer">
+                                <img src="images/linkedin.png" loading="lazy" alt="ícone linkedin">
+                                linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/noahsoldi.com.br" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="images/instagram.png" loading="lazy" alt="ícone instagram">
+                                instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 — Noah Soldi</p>
+        </div>
+    </footer>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

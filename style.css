@@ -1,0 +1,620 @@
+/* ================================ FONTES ================================ */
+/* Bebas Neue – Títulos */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ================================ RESET ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-detalhes: #00e1ae;
+    --cor-offwhite: #ccc;
+    --cursor-pointer: url('images/pointer-fff.png'), pointer;
+    --cursor-default: url('images/cursor-fff.png'), default;
+    /* --cor-detalhes: #00ffc5; */
+}
+
+/* ================================ BASE ================================ */
+body {
+    font-family: "Space Mono", monospace;
+    color: #fff;
+    background: #141414;
+    /* background-image: linear-gradient(180deg, #141414 0%, #000000 100%); */
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    cursor: var(--cursor-default);
+}
+
+a,
+button {
+    cursor: var(--cursor-pointer);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================================ CONTAINER ================================ */
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+} */
+
+/* ================================ TIPOGRAFIA ================================ */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    font-size: 80px;
+    margin-bottom: 0;
+    line-height: 1em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+}
+
+h4 {
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.4em;
+    /* max-width: 800px; */
+}
+
+/* ================================ BOTÃO ================================ */
+.btn-primary {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 6px;
+    background: #111;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 1.05rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* ================================ SEÇÕES ================================ */
+section {
+    padding: 90px 0;
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 0;
+    }
+}
+
+#home {
+    background: #141414;
+}
+
+#sobre {
+    background: linear-gradient(180deg, #141414 0%, #1A1A1A 100%);
+}
+
+#especialidades {
+    background: linear-gradient(180deg, #1A1A1A 0%, #111111 100%);
+    padding: 90px 200px;
+}
+
+@media (max-width: 991px) {
+    #especialidades {
+        padding: 60px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #especialidades {
+        padding: 50px 15px;
+    }
+}
+
+#projetos {
+    background: linear-gradient(180deg, #111111 0%, #0c0c0c 100%);
+}
+
+#contato {
+    background: linear-gradient(180deg, #0c0c0c 0%, #000000 100%);
+}
+
+footer {
+    background: #000000;
+}
+
+
+/* ================================ BANNER ================================ */
+.banner {
+    position: relative;
+    padding: 0;
+}
+
+.banner .conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    pointer-events: none;
+    font-family: "Space Mono", monospace;
+    text-align: center;
+}
+
+.banner h1 {
+    width: 100%;
+}
+
+.banner h2 {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    /* opacity: 0.6; */
+    margin-bottom: 60px;
+    text-align: center;
+    color: var(--cor-detalhes);
+}
+
+.banner p {
+    /* width: 75%; */
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+/* ================================ PADRÕES ================================ */
+
+.section-title {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-size: 29px;
+    line-height: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 19px;
+    }
+}
+
+/* ================================ ATUAÇÃO ================================ */
+.atuacao-list li+li {
+    margin-top: 12px;
+}
+
+.atuacao-list li {
+    max-width: 700px;
+    font-size: 1rem;
+    position: relative;
+}
+
+.atuacao-list li::before {
+    content: '>';
+    color: var(--cor-detalhes);
+    position: absolute;
+    left: -15px;
+    font-family: 'Space Mono', monospace;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* ================================ SKILLS ================================ */
+.orders-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .orders-wrapper {
+        grid-template-columns: 100%;
+    }
+}
+
+.order-card {
+    background: transparent;
+    color: var(--cor-offwhite);
+    padding: 20px;
+    border: dashed 2px currentColor;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.order-header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.order-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    opacity: 1;
+    color: var(--cor-detalhes);
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-item {
+    padding: 6px 0;
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 1px dashed var(--cor-offwhite);
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+/* ================================ PROJETOS ================================ */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+}
+
+.project-card {
+    padding: 24px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h4 {
+    margin-bottom: 12px;
+}
+
+.project-card strong {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cor-detalhes);
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.project-card span {
+    font-size: 11px;
+    opacity: 0.7;
+    margin-bottom: 12px;
+    display: block;
+    color: #00b289;
+}
+
+/* ================================ FECHAMENTO ================================ */
+.bl-fechamento {
+    background: #f7f7f7;
+}
+
+.fechamento-list li {
+    padding: 10px 0;
+    max-width: 800px;
+    font-size: 1rem;
+}
+
+/* ================================ SERVIÇOS ================================ */
+.servicos-list li {
+    padding: 10px 0;
+    max-width: 700px;
+    font-size: 1rem;
+}
+
+/* ================================ CONTATO ================================ */
+.bl-contato {
+    text-align: center;
+}
+
+.bl-contato ul {
+    margin-top: 60px;
+}
+
+.bl-contato ul li+li {
+    margin-top: 30px;
+}
+
+.bl-contato ul li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.bl-contato ul li a:hover {
+    color: var(--cor-detalhes);
+}
+
+.bl-contato p {
+    margin: 0 auto 36px;
+}
+
+/* ================================ RESPONSIVO ================================ */
+/* @media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .banner {
+        padding: 110px 0;
+    }
+} */
+
+/* ================================
+   GSAP SLIDER
+================================ */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.sections {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.panel {
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    visibility: hidden;
+    will-change: transform;
+    overflow-y: auto;
+}
+
+.editor {
+    font-family: 'Space Mono', sans-serif;
+}
+
+.footer {
+    padding: 32px 0;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+/* ================================
+   INDICADOR LATERAL
+================================ */
+
+.section-indicator {
+    position: fixed;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+}
+
+
+.section-indicator button {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: var(--cursor-pointer);
+    transition: all 0.18s ease;
+    position: relative;
+}
+
+.section-indicator:hover span,
+.section-indicator.indicator-clean span,
+.section-indicator button:hover span {
+    opacity: 1;
+}
+
+.section-indicator button span {
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    bottom: 0;
+    color: #fff;
+    line-height: 14px;
+    /* background-color: #fff; */
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.section-indicator button.active {
+    background-color: #fff;
+    /* transform: scale(1.3); */
+}
+
+.section-indicator button.active span {
+    font-weight: 600;
+    border-bottom: 1px solid var(--cor-detalhes);
+    padding-bottom: 15px;
+}
+
+.section-indicator button:hover {
+    transform: scale(1.2);
+}
+
+/* .section-indicator.indicator-clean button {
+    border-color: #fff !important;
+}
+
+.section-indicator.indicator-clean button span {
+    color: #fff !important;
+}
+
+.section-indicator.indicator-clean button.active {
+    border-color: #fff !important;
+    background-color: #fff !important;
+} */
+
+@media (max-width: 991px) {
+    .section-indicator {
+        top: 70px;
+    }
+
+    .banner .conteudo h1 {
+        font-size: 70px;
+    }
+
+    /* .banner .conteudo p {
+        width: 100%;
+    } */
+}
+
+/* ================================ TERMINAL MAC =============================== */
+.mac-terminal {
+    margin-top: 40px;
+    max-width: 70%;
+    /* max-width: 800px; */
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+}
+
+@media (max-width: 991px) {
+    .mac-terminal {
+        max-width: 100%;
+    }
+}
+
+.mac-terminal-header {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background-color: #2c2c2c;
+}
+
+.mac-terminal-header .btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.mac-terminal-header .red {
+    background-color: #ff5f56;
+}
+
+.mac-terminal-header .yellow {
+    background-color: #ffbd2e;
+}
+
+.mac-terminal-header .green {
+    background-color: #27c93f;
+}
+
+.mac-terminal-body {
+    padding: 16px;
+    /* color: #e5e5e5; */
+    /* color: #49f258; */
+    color: var(--cor-detalhes);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1.5s steps(1) infinite;
+    color: var(--cor-detalhes);
+}
+
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
