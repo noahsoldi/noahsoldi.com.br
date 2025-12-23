@@ -163,6 +163,7 @@ Observer.create({
 });
 
 panels.forEach((panel, i) => {
+    // Evento para desktop (wheel)
     panel.addEventListener('wheel', function(e) {
         if (animating || i !== index) return;
         const delta = e.deltaY;
@@ -178,6 +179,31 @@ panels.forEach((panel, i) => {
             }
         }
     }, { passive: false });
+
+    // Evento para mobile (touch)
+    let touchStartY = null;
+    panel.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 1) {
+            touchStartY = e.touches[0].clientY;
+        }
+    });
+    panel.addEventListener('touchend', function(e) {
+        if (touchStartY === null) return;
+        const touchEndY = e.changedTouches[0].clientY;
+        const deltaY = touchStartY - touchEndY;
+        touchStartY = null;
+        if (Math.abs(deltaY) < 30) return; // ignorar toques pequenos
+        if (animating || i !== index) return;
+        if (deltaY > 0) { // swipe para cima (scroll para baixo)
+            if (panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 2) {
+                goToPanel(index + 1, 1);
+            }
+        } else if (deltaY < 0) { // swipe para baixo (scroll para cima)
+            if (panel.scrollTop <= 2) {
+                goToPanel(index - 1, -1);
+            }
+        }
+    });
 });
 
 animateText(panels[0], 1);
