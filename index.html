@@ -3,27 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Noah Soldi | Desenvolvedor Full Stack</title>
-    <meta name="description"
-        content="Desenvolvedor Full Stack com experiência em sistemas web e mobile, focado em performance, segurança e arquitetura bem definida.">
+    <title>Noah Soldi | Desenvolvedor Full Stack | Web, Mobile e Segurança de Sistemas</title>
+
+    <!-- Meta Tags principais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Noah Soldi">
+    <meta name="description"
+        content="Noah Soldi — Desenvolvedor Full Stack especializado em sistemas web e mobile. Criação de soluções personalizadas com foco em performance, segurança e resultados para seu negócio.">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Noah Soldi | Desenvolvedor Full Stack | Web, Mobile e Segurança de Sistemas">
+    <meta property="og:description"
+        content="Noah Soldi — Desenvolvedor Full Stack especializado em sistemas web e mobile. Criação de soluções personalizadas com foco em performance, segurança e resultados para seu negócio.">
+    <meta property="og:site_name" content="Noah Soldi">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noahsoldi.com.br">
+    <meta property="og:image" content="https://noahsoldi.com.br/images/compartilhamento.png">
+    <meta property="og:image:alt" content="Noah Soldi Desenvolvedor Full Stack">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Noah Soldi | Desenvolvedor Full Stack | Web, Mobile e Segurança de Sistemas">
+    <meta name="twitter:description"
+        content="Noah Soldi — Desenvolvedor Full Stack especializado em sistemas web e mobile. Criação de soluções personalizadas com foco em performance, segurança e resultados para seu negócio.">
+    <meta name="twitter:image" content="https://noahsoldi.com.br/images/compartilhamento.png">
 
     <!-- Favicon -->
     <link rel="icon" href="https://noahsoldi.com.br/favicon.png" type="image/png">
-    <!-- imagem de compartilhamento -->
-    <meta property="og:title" content="Noah Soldi | Desenvolvedor Full Stack">
-    <meta property="og:description"
-        content="Desenvolvedor Full Stack com experiência em sistemas web e mobile, focado em performance, segurança e arquitetura bem definida.">
-    <meta property="og:image" content="https://noahsoldi.com.br/images/compartilhamento.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://noahsoldi.com.br">
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://noahsoldi.com.br">
 
+    <!-- SEO Local -->
+    <meta name="geo.region" content="BR">
+    <meta name="geo.placename" content="Rio Grande do Sul">
+    <meta name="geo.position" content="-30.0346;-51.2177">
+    <meta name="ICBM" content="-30.0346, -51.2177">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="preload" href="particles.css" as="style">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="particles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css" rel="stylesheet">
 
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
@@ -31,21 +60,38 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
 
-
     <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-    <!-- Space Mono Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDLFW81WXR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-EDLFW81WXR');
+    </script>
 
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="particles.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Noah Soldi",
+      "url": "https://noahsoldi.com.br",
+      "sameAs": [
+        "https://www.linkedin.com/in/noahsoldi",
+        "https://www.instagram.com/noahsoldi.com.br"
+      ],
+      "jobTitle": "Desenvolvedor Full Stack",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Noah Soldi"
+      }
+    }
+    </script>
 </head>
+
 
 <body>
 
@@ -317,7 +363,7 @@
             <p>© 2025 — Noah Soldi</p>
         </div>
     </footer>
-    <script src="https://noahsoldi.com.br/script.js" async defer></script>
+    <script src="https://noahsoldi.com.br/script.js" defer></script>
 </body>
 
 </html>
