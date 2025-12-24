@@ -366,6 +366,7 @@ footer {
 .bl-contato {
     text-align: center;
 }
+
 /* 
 .bl-contato ul {
     margin-top: 60px;
@@ -391,6 +392,12 @@ footer {
 
 .bl-contato p {
     margin: 0 auto 36px;
+}
+
+@media (max-width: 768px) {
+    .bl-form-rdstation section {
+        padding: 0 0 30px 0;
+    }
 }
 
 /* ================================ RESPONSIVO ================================ */
