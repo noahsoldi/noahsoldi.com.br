@@ -179,6 +179,7 @@ footer {
     overflow: hidden;
     pointer-events: none;
     font-family: "Space Mono", monospace;
+    width: fit-content;
     text-align: center;
 }
 
