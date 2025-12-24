@@ -176,6 +176,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    overflow: hidden;
     pointer-events: none;
     font-family: "Space Mono", monospace;
     text-align: center;
