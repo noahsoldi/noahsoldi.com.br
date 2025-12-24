@@ -366,10 +366,10 @@ footer {
 .bl-contato {
     text-align: center;
 }
-
+/* 
 .bl-contato ul {
     margin-top: 60px;
-}
+} */
 
 .bl-contato ul li+li {
     margin-top: 30px;
