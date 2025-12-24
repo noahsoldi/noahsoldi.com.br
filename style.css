@@ -176,11 +176,16 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    overflow: hidden;
     pointer-events: none;
     font-family: "Space Mono", monospace;
-    width: fit-content;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .banner .conteudo {
+        max-width: 280px;
+        overflow: hidden;
+    }
 }
 
 .banner h1 {
