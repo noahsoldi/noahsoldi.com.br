@@ -562,6 +562,30 @@ body {
     } */
 }
 
+/* ================================ LISTA DE IDIOMAS =============================== */
+.lista-idiomas {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lista-idiomas a {
+    display: block;
+    width: 30px;
+}
+
+.lista-idiomas a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
 /* ================================ TERMINAL MAC =============================== */
 .mac-terminal {
     margin-top: 40px;
